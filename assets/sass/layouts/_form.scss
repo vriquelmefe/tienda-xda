@@ -1,0 +1,183 @@
+.form {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: $smoky-black;
+    color: $white;
+    padding: 1em 2em;
+    font-weight: $regular;
+    width: 90vw;
+    height: 10em;
+    &__tittle {
+        @include relative-converter(font-size, rem, $xx-large, 16);
+        margin: 0;
+    }
+    &__group {
+        display: inline-block;
+        font-family: $old-standard-tt;
+        @include relative-converter(font-size, rem, $small, 16);
+        margin-top: .5em;
+        width: 70%;
+    }
+    &__control {
+        display: block;
+        font-family: $raleway;
+        box-sizing: border-box;
+        padding: .5em 1em .5em 1em;
+        margin-top: .5em;
+        width: 70vw;
+    }
+}
+
+@media (min-width:394px) and (max-width: 470px) {
+    .form {
+        margin-top: 1em;
+        width: 95%;
+        &__group {
+            margin-left: 2em;
+            width: 80%;
+        }
+        &__control {
+            width: 65vw;
+        }
+    }
+}
+
+@media (min-width:471px) and (max-width: 530px) {
+    .form {
+        margin-top: 1em;
+        width: 95%;
+        &__group {
+            margin-left: 2em;
+            width: 80%;
+        }
+        &__control {
+            width: 68vw;
+        }
+    }
+}
+
+@media (min-width:532px) and (max-width: 640px) {
+    .form {
+        margin-top: 3em;
+        width: 95%;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__group {
+            margin-left: 2em;
+            width: 90%;
+        }
+        &__control {
+            padding: .5em;
+            width: 78vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}
+
+@media (min-width:641px) and (max-width: 720px) {
+    .form {
+        margin-top: 3em;
+        width: 95%;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__group {
+            width: 80%;
+        }
+        &__control {
+            padding: .5em;
+            width: 75vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}
+
+@media (min-width:721px) and (max-width: 845px) {
+    .form {
+        margin-top: 3em;
+        width: 95%;
+        display: grid;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__group {
+            width: 100%;
+            margin-left: 2rem;
+        }
+        &__control {
+            padding: .5em;
+            width: 78vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}
+
+@media (min-width:846px) and (max-width: 992px) {
+    .form {
+        margin-top: 3em;
+        width: 95%;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__group {
+            width: 100%;
+            margin-left: 2rem;
+        }
+        &__control {
+            padding: .5em;
+            width: 85vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}
+
+@media (min-width:993px) {
+    .form {
+        margin-top: 3em;
+        width: 38%;
+        display: grid;
+        grid-template-columns: auto 100px;
+        top: 40em;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__group {
+            width: 100%;
+            margin-left: 2rem;
+        }
+        &__control {
+            padding: .5em;
+            width: 25vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}
+
+@media (min-width:1200px) and (max-width:1880px) {
+    .form {
+        margin-top: 3em;
+        width: 40%;
+        display: grid;
+        grid-template-columns: auto 100px;
+        top: 40em;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__group {
+            width: 100%;
+            margin-left: 2rem;
+        }
+        &__control {
+            padding: .5em;
+            width: 25vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}

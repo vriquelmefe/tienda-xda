@@ -1,0 +1,146 @@
+.navigation {
+    position: absolute;
+    width: 100vw;
+}
+
+.navigation__logo {
+    position: relative;
+    @include relative-converter(font-size, rem, $xx-large, 16);
+    font-weight: $regular;
+    &--font-size {
+        display: inline;
+        color: $white;
+        text-decoration: none;
+        background-color: $smoky-black;
+        padding: 1.1rem .5rem;
+    }
+}
+
+.collapsible {
+    position: absolute;
+    text-align: right;
+    right: 10%;
+    label {
+        display: block;
+        padding-top: .6em;
+        padding-bottom: .5em;
+        padding-left: 9em;
+        margin-left: 4rem;
+        @include relative-converter(font-size, rem, $x-large, 16);
+    }
+}
+
+#menu {
+    display: none;
+}
+
+input:checked~.navigation__container {
+    max-height: 100%;
+}
+
+.navigation__container {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navigation__list {
+    list-style-type: none;
+}
+
+.navigation__item {
+    a {
+        display: block;
+        text-align: left;
+        padding: .5em;
+        font-family: $raleway;
+        @include relative-converter(font-size, rem, $small, 16);
+        font-weight: $bold;
+        text-decoration: none;
+        color: $smoky-black;
+        &:hover {
+            color: $granite-gray;
+        }
+    }
+}
+
+@media (min-width:350px) and (max-width: 575px) {
+    .navigation__item {
+        a {
+            text-align: right;
+            margin-right: 2%;
+        }
+    }
+}
+
+@media (min-width:576px) and (max-width: 768px) {
+    .collapsible {
+        label {
+            display: none;
+        }
+    }
+    .navigation__container {
+        min-height: 100%;
+        padding: .5em 3em .5em 3em;
+        overflow: visible;
+        margin-right: -5%;
+    }
+    .navigation__list {
+        display: flex;
+        justify-content: flex-end;
+        margin: inherit;
+    }
+    .navigation__item {
+        a {
+            padding: .5em 1em;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .collapsible {
+        label {
+            display: none;
+        }
+    }
+    .navigation__container {
+        min-height: 100%;
+        padding: .5em 3em .5em 3em;
+        overflow: visible;
+        margin-right: -15%;
+    }
+    .navigation__list {
+        display: flex;
+        justify-content: flex-end;
+        margin: inherit;
+    }
+    .navigation__item {
+        a {
+            padding: .5em 1em;
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width: 992px) {
+    .collapsible {
+        label {
+            display: none;
+        }
+    }
+    .navigation__container {
+        min-height: 100%;
+        padding: .5em 3em .5em 3em;
+        overflow: visible;
+        margin-right: -10%;
+    }
+    .navigation__list {
+        display: flex;
+        justify-content: flex-end;
+        margin: inherit;
+    }
+    .navigation__item {
+        a {
+            padding: .5em 1em;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Goolge Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!--mi Style CSS-->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Tienda XDA</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navigation row">
+            <div class="navigation__logo">
+                <h6 class="navigation__logo--font-size">XDA</h6>
+            </div>
+            <div class="collapsible">
+                <input type="checkbox" id="menu">
+                <label for="menu"><i class="fas fa-bars"></i></label>
+                <div class="navigation__container">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#">Mujer</a></li>
+                        <li class="navigation__item"><a href="#">Hombre</a></li>
+                        <li class="navigation__item"><a href="#">Accesorios</a></li>
+                        <li class="navigation__item"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="row">
+                <div class="hero-section__featured-image item1 "> </div>
+                <div class="hero-section__container item2 col-xs-12 ">
+                    <div class="hero-section__main-content col-xs-12 col-lg-6">
+                        <h1>Lorem ipsum ad valorem</h1>
+                        <p class="col-lg-6">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque Ipsa.
+                        </p>
+                        <div class="hero-section__button">
+                            <button type="button" class="button button_primary">Ir a la tienda</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--Newsletter-->
+        <form class="form">
+            <div class="row">
+                <div class="item3">
+                    <div class="form__group">
+                        <h2 class="form__tittle">Newsletter</h2>
+                        <label for="inputEmail">Correo Electrónico</label>
+                        <input type="email" class="form__control" id="inputEmail" placeholder="Ingresa tu correo electrónico">
+                    </div>
+                    <div class="form__button">
+                        <button type="button form__button--font">Suscribir</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+
+
+</body>
+
+</html>

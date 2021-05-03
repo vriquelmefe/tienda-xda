@@ -1,0 +1,217 @@
+.button_primary {
+    background-color: $white;
+    padding: .8em;
+    font-weight: $bold;
+    @include relative-converter(font-size, rem, $small, 16);
+    font-family: $raleway;
+    border-color: $smoky-black;
+    &:hover {
+        border-color: $light-gray;
+    }
+    &:focus {
+        border-color: $light-gray;
+        color: $light-gray;
+    }
+}
+
+.form__button {
+    position: relative;
+    transform: translate(-1.61em, -8.5em);
+    transform: rotate(90deg);
+    width: 9.375em;
+    margin-top: -4em;
+    right: -90%;
+    & button {
+        font-family: $old-standard-tt;
+        background-color: $white;
+        font-weight: $bold;
+        @include relative-converter(font-size, rem, $large, 16);
+        padding: 0.5em 2.55em 0.5em 2.4em;
+        border: none;
+    }
+}
+
+@media (min-width:394px) and (max-width: 470px) {
+    .button_primary {
+        background-color: $white;
+        padding: .7em 1.5em;
+        font-weight: $bold;
+        @include relative-converter(font-size, rem, $x-small, 16);
+        font-family: $raleway;
+        border-color: $quick-silver;
+        &:hover {
+            border-color: $light-gray;
+        }
+        &:focus {
+            border-color: $light-gray;
+            color: $light-gray;
+        }
+    }
+    .form__button {
+        top: -.2em;
+        right: -99%;
+        & button {
+            font-family: $old-standard-tt;
+            background-color: $white;
+            font-weight: $bold;
+            @include relative-converter(font-size, rem, $large, 16);
+            padding: 0.5em 2.55em 0.5em 2.4em;
+            border: none;
+        }
+    }
+}
+
+@media (min-width:471px) and (max-width: 531px) {
+    .button_primary {
+        background-color: $white;
+        padding: .7em 1.5em;
+        font-weight: $bold;
+        @include relative-converter(font-size, rem, $x-small, 16);
+        font-family: $raleway;
+        border-color: $quick-silver;
+        &:hover {
+            border-color: $light-gray;
+        }
+        &:focus {
+            border-color: $light-gray;
+            color: $light-gray;
+        }
+    }
+    .form__button {
+        top: -.2em;
+        right: -99%;
+        & button {
+            font-family: $old-standard-tt;
+            background-color: $white;
+            font-weight: $bold;
+            @include relative-converter(font-size, rem, $large, 16);
+            padding: 0.5em 2.55em 0.5em 2.4em;
+            border: none;
+        }
+    }
+}
+
+@media (min-width:532px) and (max-width: 640px) {
+    .button_primary {
+        border-color: $quick-silver;
+        padding: .7em 1.8em;
+    }
+    .form__button {
+        top: 1em;
+        right: -95%;
+        & button {
+            font-family: $old-standard-tt;
+            background-color: $white;
+            font-weight: $bold;
+            @include relative-converter(font-size, rem, $large, 16);
+            padding: 0.5em 2.55em 0.5em 2.3em;
+            border: none;
+        }
+    }
+}
+
+@media (min-width:641px) and (max-width: 720px) {
+    .button_primary {
+        border-color: $quick-silver;
+        padding: .7em 1.8em;
+    }
+    .form__button {
+        top: .9em;
+        right: -105%;
+        & button {
+            font-family: $old-standard-tt;
+            background-color: $white;
+            font-weight: $bold;
+            @include relative-converter(font-size, rem, $large, 16);
+            padding: 0.5em 2.5em 0.5em 2.4em;
+            border: none;
+        }
+    }
+}
+
+@media (min-width:721px) and (max-width: 845px) {
+    .button_primary {
+        border-color: $quick-silver;
+        padding: .7em 1.8em;
+    }
+    .form__button {
+        top: .95em;
+        right: -100%;
+        display: grid;
+        & button {
+            font-family: $old-standard-tt;
+            background-color: $white;
+            font-weight: $bold;
+            @include relative-converter(font-size, rem, $large, 16);
+            padding: 0.5em 2.5em 0.5em 2.4em;
+            border: none;
+        }
+    }
+}
+
+@media (min-width:846px) and (max-width: 992px) {
+    .button_primary {
+        border-color: $quick-silver;
+        padding: .7em 1.8em;
+    }
+    .form__button {
+        top: .95em;
+        right: -95%;
+        & button {
+            font-family: $old-standard-tt;
+            background-color: $white;
+            font-weight: $bold;
+            @include relative-converter(font-size, rem, $large, 16);
+            padding: 0.5em 2.5em 0.5em 2.4em;
+            border: none;
+        }
+    }
+}
+
+@media (min-width:993px) and (max-width:1199px) {
+    .button_primary {
+        border-color: $quick-silver;
+        padding: .7em 1.8em;
+    }
+    .form__button {
+        top: .95em;
+        right: -100%;
+        display: grid;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1341px) {
+    .button_primary {
+        border-color: $quick-silver;
+        padding: .7em 1.8em;
+    }
+    .form__button {
+        top: .95em;
+        right: -112%;
+        display: grid;
+    }
+}
+
+@media (min-width:1342px) and (max-width:1657px) {
+    .button_primary {
+        border-color: $quick-silver;
+        padding: .7em 1.8em;
+    }
+    .form__button {
+        top: .95em;
+        right: -120%;
+        display: grid;
+    }
+}
+
+@media (min-width:1658px) {
+    .button_primary {
+        border-color: $quick-silver;
+        padding: .7em 1.8em;
+    }
+    .form__button {
+        top: .95em;
+        right: -125%;
+        display: grid;
+    }
+}

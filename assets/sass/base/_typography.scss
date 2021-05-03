@@ -1,0 +1,10 @@
+h1 {
+    font-family: $old-standard-tt;
+    text-transform: uppercase;
+    @include relative-converter(font-size, rem, $xx-large, 16);
+}
+
+p,
+li {
+    font-family: $raleway;
+}
