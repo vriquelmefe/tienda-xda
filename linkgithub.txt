@@ -1,0 +1,6 @@
+-- link de github con el proyecto
+
+https://vriquelmefe.github.io/tienda-xda/
+
+link de pagina con gh-pages
+https://vriquelmefe.github.io/tienda-xda/
